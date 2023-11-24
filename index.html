@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>clima - tempo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
   
@@ -14,10 +18,28 @@
 <body>
   <main class="conteiner">
     <div class="busca">
-      <input type="text" id="input-busca">
+      <input type="text" id="input-busca" placeholder="Digite uma Cidade">
+      <button class="btn-busca">
+        <img class="lupa" src="./src/img/lupa.png" alt="lupa da busca">
+      </button>
     </div>
-    <div></div>
-    <div></div>
+    <div class="informacao-principal">
+      <h1 id="cidade">Use a Lupa para ver o clima em uma Cidade</h1>
+        <p class="temperatura" id="temperatura"></p>
+        <img id="icone-condicao" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="icone condição do clima">
+        <p class="condicao" id="codicao"></p>
+    </div>
+    <div class="informacao-secundaria">
+      <div class="humidade">
+        <span>humidade</span>
+        <span id="humidade">--</span>
+      </div>
+      <div class="velocidade-do-vento">
+        <span>velocidade do vento</span>
+        <span id="velocidade-do-vento">--</span>
+      </div>
+
+    </div>
   </main>
   
   <script src="main.js"></script>
